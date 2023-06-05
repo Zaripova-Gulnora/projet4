@@ -97,16 +97,18 @@ $h1-card-size:1.1rem;
 .sousmenus {
   @media (min-width:992px) {
     display: flex;
-    justify-content: center;
-    width: 100%;
+    flex-direction: column;    
+    width: auto;
+    margin-left: 5rem;
+    margin-right: 5rem;
 
   }
 }
 
 .sousmenu {
-  width: 100%;
+  
   @media (min-width:992px) {
-    width:33%;
+    width:100%;
   }
   
   &__title {
@@ -200,7 +202,7 @@ $h1-card-size:1.1rem;
 
 .menuitem__header > h2 {
   font-size:$h1-card-size;
-  font-weight: 500;
+  font-weight: 700;
   margin: 0;
 }
 
@@ -214,3 +216,41 @@ $h1-card-size:1.1rem;
 .commander {
   @extend %flex-center;
 }
+
+.sousmenus {
+    @media (min-width:1250px) {
+      display: flex;
+      flex-direction: column;
+      width: auto;
+      margin-left: 5rem;
+      margin-right: 5rem;    
+           
+    }
+  }
+  .menu {
+  
+    @media (min-width:1250px) {
+      width:80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__header {
+        padding: 1rem 2rem 2rem 1rem;
+        display: flex;
+        justify-content: center;
+        
+      }
+      &__title {
+        font-family: 'Shrikhand','sans-serif';
+        font-size: 1.5rem;
+        padding: 1rem;
+      }
+    
+  }
+  
+
+
+
+
+   
+  

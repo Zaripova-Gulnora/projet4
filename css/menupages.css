@@ -65,17 +65,16 @@
 @media (min-width: 992px) {
   .sousmenus {
     display: flex;
-    justify-content: center;
-    width: 100%;
+    flex-direction: column;
+    width: auto;
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 }
 
-.sousmenu {
-  width: 100%;
-}
 @media (min-width: 992px) {
   .sousmenu {
-    width: 33%;
+    width: 100%;
   }
 }
 .sousmenu__title {
@@ -148,7 +147,7 @@
 
 .menuitem__header > h2 {
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 700;
   margin: 0;
 }
 
@@ -156,4 +155,32 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}/*# sourceMappingURL=menupage.css.map */
+}
+
+@media (min-width: 1250px) {
+  .sousmenus {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+
+@media (min-width: 1250px) {
+  .menu {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.menu__header {
+  padding: 1rem 2rem 2rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+.menu__title {
+  font-family: "Shrikhand", "sans-serif";
+  font-size: 1.5rem;
+  padding: 1rem;
+}/*# sourceMappingURL=menupages.css.map */
